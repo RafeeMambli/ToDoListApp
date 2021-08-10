@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/style.css" />
+    </script>
+    <title>ToDo List</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">To Do List</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
+          </ul>
+        </div>
+      </div><!-- /container -->
+    </div>
+    <!-- /Header -->
+
+    <div class="container">
+      <h1>To Do List</h1>
+      <input type="text" id="myInput" data-taskStatus="new" placeholder="Things to be done..." />
+      <span class="addBtn" id="add_button">Submit</span>
+      <ul id="myUL" class="connectedSortable"></ul>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/json2.js"></script>
+    <script src="js/taskList.js"></script>
+  </body>
+</html>
